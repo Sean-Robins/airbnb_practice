@@ -16,3 +16,8 @@
 -- | Burnside               | 10       |
 
 
+select neighborhood, count(*)
+from listings
+inner join reviews
+on listings.id = listing_id
+group by neighborhood

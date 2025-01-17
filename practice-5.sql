@@ -13,3 +13,7 @@
 -- +-------------------------------------+----------+
 
 
+select property_type, count(*)
+from listings
+where neighborhood = "Hyde Park"
+group by property_type
